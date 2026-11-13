@@ -41,9 +41,8 @@ table{{border-collapse:collapse;width:100%;margin:3px 0;font-size:8.6pt}}td,th{{
 
 <h2>6. Evidence</h2>
 <ul>
-<li>Repository with commits (the plan and pass mark are the first commit, before any results): {REPO}</li>
-<li>In the repository: <i>SPIKE_PLAN.md</i> (first commit); <i>results/</i> raw JSON and logs for every run (all answers, tool calls, latencies); <i>run_spike.py</i>, <i>assistant.py</i>, <i>server.py</i>; <i>evidence/dashboard_chat_screenshot.jpg</i> (dashboard with a "No data found" answer and tool calls shown under each answer).</li>
-<li>Screen recording: RECORDING_URL_HERE</li></ul>"""
+<li>Public repository with commits (the plan and pass mark are the first commit, before any results): {REPO}</li>
+<li>In the repository: <i>SPIKE_PLAN.md</i> (first commit); <i>results/</i> raw JSON and logs for every run (all answers, tool calls, latencies); <i>run_spike.py</i>, <i>assistant.py</i>, <i>server.py</i>; <i>evidence/dashboard_chat_screenshot.jpg</i> (dashboard with a "No data found" answer and tool calls shown under each answer).</li></ul>"""
 open("report.html", "w").write(html)
 subprocess.run(["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "--headless", "--disable-gpu", "--no-pdf-header-footer",
                 "--print-to-pdf=Mindel_Ryan_Spike.pdf", "file://" + os.path.abspath("report.html")], capture_output=True)
