@@ -1,2 +1,0 @@
-/Users/ryanmindel/School/IT444/spike/server.py:59: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-  e = dict(event_id=str(uuid.uuid4()), timestamp=datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), src_ip="192.168.50.77",
