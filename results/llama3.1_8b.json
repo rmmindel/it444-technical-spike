@@ -1,13 +1,15 @@
 {
  "summary": {
   "model": "llama3.1:8b",
-  "run_at": "2026-11-13T13:36:13",
+  "run_at": "2026-11-13T13:37:47",
   "answers_with_fabricated_values": 3,
   "empty_cases_correct": "5/5",
   "tool_correct_all20": "20/20",
   "tool_correct_data15": "15/15",
   "under_30s": "20/20",
-  "median_latency_s": 5.2,
+  "fabricated_values_total": 4,
+  "of_which_echoed_from_own_query": 4,
+  "median_latency_s": 4.6,
   "PASS": false
  },
  "rows": [
@@ -27,18 +29,19 @@
      "result_count": 16
     }
    ],
-   "latency_ms": 10688,
+   "latency_ms": 4569,
    "status": "ok",
    "fabricated": [],
    "empty_ok": null,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 2,
    "question": "Show me all events involving 192.168.50.31 today.",
    "empty_case": false,
-   "answer": "There have been 8 events involving 192.168.50.31 today. These events are all related to SSH brute force attempts on 192.168.50.10. The attempts were made from 192.168.50.31 at various times between 10:02 and 10:09.",
+   "answer": "There have been 8 events involving 192.168.50.31 today. These events are all related to SSH brute force attempts from 192.168.50.31 to 192.168.50.10. The severity of these events is 3, indicating a moderate level of concern.",
    "tool_calls": [
     {
      "name": "search_events",
@@ -50,12 +53,13 @@
      "result_count": 8
     }
    ],
-   "latency_ms": 7143,
+   "latency_ms": 5079,
    "status": "ok",
    "fabricated": [],
    "empty_ok": null,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 3,
@@ -71,12 +75,13 @@
      "result_count": 1
     }
    ],
-   "latency_ms": 2071,
+   "latency_ms": 2046,
    "status": "ok",
    "fabricated": [],
    "empty_ok": null,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 4,
@@ -92,12 +97,13 @@
      "result_count": 2
     }
    ],
-   "latency_ms": 5296,
+   "latency_ms": 5260,
    "status": "ok",
    "fabricated": [],
    "empty_ok": null,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 5,
@@ -113,12 +119,13 @@
      "result_count": 8
     }
    ],
-   "latency_ms": 8509,
+   "latency_ms": 6426,
    "status": "ok",
    "fabricated": [],
    "empty_ok": null,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 6,
@@ -134,12 +141,13 @@
      "result_count": 12
     }
    ],
-   "latency_ms": 5021,
+   "latency_ms": 2235,
    "status": "ok",
    "fabricated": [],
    "empty_ok": null,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 7,
@@ -155,12 +163,13 @@
      "result_count": 1
     }
    ],
-   "latency_ms": 3934,
+   "latency_ms": 3907,
    "status": "ok",
    "fabricated": [],
    "empty_ok": null,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 8,
@@ -171,19 +180,20 @@
     {
      "name": "search_events",
      "params": {
-      "end": "2026-11-12T12:00:00Z",
       "ip": "192.168.50.57",
-      "start": "2026-11-12T00:00:00Z"
+      "start": "2026-11-12T00:00:00Z",
+      "end": "2026-11-12T12:00:00Z"
      },
      "result_count": 3
     }
    ],
-   "latency_ms": 4547,
+   "latency_ms": 3727,
    "status": "ok",
    "fabricated": [],
    "empty_ok": null,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 9,
@@ -201,12 +211,13 @@
      "result_count": 11
     }
    ],
-   "latency_ms": 6538,
+   "latency_ms": 4245,
    "status": "ok",
    "fabricated": [],
    "empty_ok": null,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 10,
@@ -224,12 +235,13 @@
      "result_count": 6
     }
    ],
-   "latency_ms": 8563,
+   "latency_ms": 7194,
    "status": "ok",
    "fabricated": [],
    "empty_ok": null,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 11,
@@ -245,12 +257,13 @@
      "result_count": 1
     }
    ],
-   "latency_ms": 1979,
+   "latency_ms": 1972,
    "status": "ok",
    "fabricated": [],
    "empty_ok": null,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 12,
@@ -268,12 +281,13 @@
      "result_count": 8
     }
    ],
-   "latency_ms": 6645,
+   "latency_ms": 4785,
    "status": "ok",
    "fabricated": [],
    "empty_ok": null,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 13,
@@ -284,26 +298,27 @@
     {
      "name": "search_events",
      "params": {
+      "ip": "192.168.50.23",
       "sensor": "zeek",
       "start": "2026-11-12T00:00:00Z",
-      "end": "2026-11-12T12:00:00Z",
-      "ip": "192.168.50.23"
+      "end": "2026-11-12T12:00:00Z"
      },
      "result_count": 4
     }
    ],
-   "latency_ms": 5343,
+   "latency_ms": 4430,
    "status": "ok",
    "fabricated": [],
    "empty_ok": null,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 14,
    "question": "Summarize incident INC-005 for me.",
    "empty_case": false,
-   "answer": "Incident INC-005 is a medium-severity incident involving a SQL injection attempt. The attack originated from IP address 192.168.50.57 and targeted a web server at 192.168.50.10. The attack was detected by Suricata sensor and occurred between 11:41:00Z and 11:44:00Z. There were three alerts related to this incident.",
+   "answer": "Incident INC-005 is a medium-severity incident that occurred on 2026-11-12T11:41:00Z. The source IP address is 192.168.50.57, and the destination IP address is 192.168.50.10. The incident is related to a SQL injection attempt on a web server, as detected by the Suricata sensor. There are three alerts associated with this incident, all with a severity of 2. The incident is currently open.",
    "tool_calls": [
     {
      "name": "get_incident_details",
@@ -313,12 +328,13 @@
      "result_count": 3
     }
    ],
-   "latency_ms": 5163,
+   "latency_ms": 5235,
    "status": "ok",
    "fabricated": [],
    "empty_ok": null,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 15,
@@ -334,12 +350,13 @@
      "result_count": 2
     }
    ],
-   "latency_ms": 6067,
+   "latency_ms": 6139,
    "status": "ok",
    "fabricated": [],
    "empty_ok": null,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 16,
@@ -350,21 +367,24 @@
     {
      "name": "search_events",
      "params": {
-      "ip": "192.168.50.99",
       "start": "2026-11-12T00:00:00Z",
-      "end": "2026-11-12T12:00:00Z"
+      "end": "2026-11-12T12:00:00Z",
+      "ip": "192.168.50.99"
      },
      "result_count": 0
     }
    ],
-   "latency_ms": 4581,
+   "latency_ms": 4621,
    "status": "no_data",
    "fabricated": [
     "2026-11-12T00:00:00Z"
    ],
    "empty_ok": true,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": [
+    "2026-11-12T00:00:00Z"
+   ]
   },
   {
    "id": 17,
@@ -380,12 +400,13 @@
      "result_count": 0
     }
    ],
-   "latency_ms": 1958,
+   "latency_ms": 1990,
    "status": "no_data",
    "fabricated": [],
    "empty_ok": true,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 18,
@@ -403,14 +424,17 @@
      "result_count": 0
     }
    ],
-   "latency_ms": 4549,
+   "latency_ms": 4680,
    "status": "no_data",
    "fabricated": [
     "2026-11-12T00:00:00Z"
    ],
    "empty_ok": true,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": [
+    "2026-11-12T00:00:00Z"
+   ]
   },
   {
    "id": 19,
@@ -426,12 +450,13 @@
      "result_count": 0
     }
    ],
-   "latency_ms": 2356,
+   "latency_ms": 2613,
    "status": "no_data",
    "fabricated": [],
    "empty_ok": true,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": []
   },
   {
    "id": 20,
@@ -449,7 +474,7 @@
      "result_count": 0
     }
    ],
-   "latency_ms": 4965,
+   "latency_ms": 5537,
    "status": "no_data",
    "fabricated": [
     "2026-11-11T02:00:00Z",
@@ -457,7 +482,11 @@
    ],
    "empty_ok": true,
    "tool_ok": true,
-   "error": null
+   "error": null,
+   "fabricated_but_echoed_from_own_query": [
+    "2026-11-11T02:00:00Z",
+    "2026-11-11T03:00:00Z"
+   ]
   }
  ]
 }

@@ -1,0 +1,80 @@
+[
+ {
+  "incident": "INC-001",
+  "used_context": true,
+  "calls": [
+   {
+    "name": "get_incident_details",
+    "params": {
+     "incident_id": "INC-001",
+     "ip": "192.168.50.23"
+    },
+    "result_count": 12
+   }
+  ],
+  "answer": "The incident INC-001 involves a high-severity Nmap SYN scan from IP 192.168.50.23. This activity is considered dangerous as it indicates an attempt to scan your",
+  "latency_ms": 10175
+ },
+ {
+  "incident": "INC-002",
+  "used_context": true,
+  "calls": [
+   {
+    "name": "get_incident_details",
+    "params": {
+     "incident_id": "INC-002"
+    },
+    "result_count": 8
+   }
+  ],
+  "answer": "The incident INC-002 involves multiple SSH brute force attempts from the source IP 192.168.50.31. This activity is marked as High severity and has been ongoing ",
+  "latency_ms": 7874
+ },
+ {
+  "incident": "INC-003",
+  "used_context": true,
+  "calls": [
+   {
+    "name": "get_incident_details",
+    "params": {
+     "incident_id": "INC-003"
+    },
+    "result_count": 6
+   }
+  ],
+  "answer": "The incident INC-003 involves multiple DNS queries to suspicious top-level domains (TLDs) from the source IP 192.168.50.44. This activity has been flagged as me",
+  "latency_ms": 6631
+ },
+ {
+  "incident": "INC-004",
+  "used_context": true,
+  "calls": [
+   {
+    "name": "get_incident_details",
+    "params": {
+     "incident_id": "INC-004",
+     "ip": "192.168.50.23"
+    },
+    "result_count": 5
+   }
+  ],
+  "answer": "The incident INC-004 involves a low-severity ICMP ping sweep from IP 192.168.50.23. This activity is considered normal and is typically performed by network sca",
+  "latency_ms": 6805
+ },
+ {
+  "incident": "INC-005",
+  "used_context": true,
+  "calls": [
+   {
+    "name": "get_incident_details",
+    "params": {
+     "incident_id": "INC-005",
+     "ip": "192.168.50.57"
+    },
+    "result_count": 3
+   }
+  ],
+  "answer": "The incident INC-005 involves multiple attempts of SQL Injection, which is a serious security issue. The source IP 192.168.50.57 is making repeated requests to ",
+  "latency_ms": 5906
+ }
+]

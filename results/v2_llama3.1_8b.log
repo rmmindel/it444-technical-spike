@@ -1,0 +1,33 @@
+Q 1 tool_ok=True  fab=[] empty_ok=None 10.3s  '192.168.50.23 was involved in several suspicious activities between 09:00 and 10:00 today.'
+Q 2 tool_ok=True  fab=[] empty_ok=None 6.6s  'There have been 8 events involving 192.168.50.31 today. These events are all related to SS'
+Q 3 tool_ok=True  fab=[] empty_ok=None 2.1s  'There is 1 incident from 192.168.50.31 with 8 alerts.'
+Q 4 tool_ok=True  fab=[] empty_ok=None 2.9s  'The IP address 192.168.50.23 is involved in two incidents: INC-001 and INC-004.'
+Q 5 tool_ok=True  fab=[] empty_ok=None 9.6s  'The details of incident INC-002 are as follows:\n\n* Incident ID: INC-002\n* Source IP: 192.1'
+Q 6 tool_ok=True  fab=[] empty_ok=None 5.1s  'The ports targeted in incident INC-001 were 22, 80, 443, 445, 3306, and 8080.'
+Q 7 tool_ok=True  fab=[] empty_ok=None 3.0s  '192.168.50.44 is involved in incident INC-003, which was first seen at 2026-11-12T11:30:00'
+Q 8 tool_ok=True  fab=[] empty_ok=None 5.5s  '192.168.50.57 made three attempts to inject SQL code into a web server at 192.168.50.10. T'
+Q 9 tool_ok=True  fab=[] empty_ok=None 6.6s  'There were events on port 22 today. The events were all related to SSH brute force attempt'
+Q10 tool_ok=True  fab=[] empty_ok=None 13.2s  'There were events on port 80 today. The events include:\n\n* A Nmap SYN scan at 09:14:10Z fr'
+Q11 tool_ok=True  fab=[] empty_ok=None 2.0s  'The severity of the incident involving 192.168.50.44 is Medium.'
+Q12 tool_ok=True  fab=[] empty_ok=None 6.7s  'The activity from 192.168.50.31 started on 2026-11-12T10:02:00Z and ended on 2026-11-12T10'
+Q13 tool_ok=True  fab=[] empty_ok=None 5.5s  'Zeek events from 192.168.50.23 today show connections to 192.168.50.10 on ports 22, 445, 8'
+Q14 tool_ok=True  fab=[] empty_ok=None 5.3s  'Incident INC-005 is a medium-severity incident involving a SQL injection attempt on a web '
+Q15 tool_ok=True  fab=[] empty_ok=None 9.0s  '192.168.50.23 is potentially dangerous. It has been involved in several suspicious activit'
+Q16 tool_ok=True  fab=[] empty_ok=True 3.3s  'No data found for 192.168.50.99.'
+Q17 tool_ok=True  fab=[] empty_ok=True 1.8s  'No data found for incident INC-009.'
+Q18 tool_ok=True  fab=[] empty_ok=True 3.2s  'No data found for port 3389.'
+Q19 tool_ok=True  fab=[] empty_ok=True 2.2s  'No data found for 10.0.0.5.'
+Q20 tool_ok=True  fab=['2026-11-11'] empty_ok=True 4.4s  "No data found for 192.168.50.23's activity between 02:00 and 03:00 on 2026-11-11."
+{
+ "model": "llama3.1:8b",
+ "run_at": "2026-11-13T13:49:54",
+ "answers_with_fabricated_values": 1,
+ "empty_cases_correct": "5/5",
+ "tool_correct_all20": "20/20",
+ "tool_correct_data15": "15/15",
+ "under_30s": "20/20",
+ "fabricated_values_total": 1,
+ "of_which_echoed_from_own_query": 1,
+ "median_latency_s": 5.3,
+ "PASS": false
+}

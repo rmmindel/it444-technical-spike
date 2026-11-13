@@ -1,0 +1,82 @@
+[
+ {
+  "incident": "INC-001",
+  "used_context": false,
+  "calls": [
+   {
+    "name": "search_events",
+    "params": {
+     "start": "2026-11-12T00:00:00Z",
+     "end": "2026-11-12T12:00:00Z"
+    },
+    "result_count": 38
+   }
+  ],
+  "answer": "This is a JSON object representing a collection of security events detected by a Suricata sensor. Here's a breakdown of the object:\n\n**Events**\n\nThe object cont",
+  "latency_ms": 25270
+ },
+ {
+  "incident": "INC-002",
+  "used_context": false,
+  "calls": [
+   {
+    "name": "search_events",
+    "params": {
+     "start": "2026-11-12T00:00:00Z",
+     "end": "2026-11-12T12:00:00Z"
+    },
+    "result_count": 38
+   }
+  ],
+  "answer": "This is a JSON object representing a collection of security events detected by a Suricata sensor. Here's a breakdown of the object:\n\n**Events**\n\nThe object cont",
+  "latency_ms": 19138
+ },
+ {
+  "incident": "INC-003",
+  "used_context": false,
+  "calls": [
+   {
+    "name": "search_events",
+    "params": {
+     "start": "2026-11-12T00:00:00Z",
+     "end": "2026-11-12T12:00:00Z"
+    },
+    "result_count": 38
+   }
+  ],
+  "answer": "This is a JSON object representing a collection of security events detected by a Suricata sensor. Here's a breakdown of the object:\n\n**Events**\n\nThe object cont",
+  "latency_ms": 19078
+ },
+ {
+  "incident": "INC-004",
+  "used_context": false,
+  "calls": [
+   {
+    "name": "search_events",
+    "params": {
+     "start": "2026-11-12T00:00:00Z",
+     "end": "2026-11-12T12:00:00Z"
+    },
+    "result_count": 38
+   }
+  ],
+  "answer": "This is a JSON object representing a collection of security events detected by a Suricata sensor. Here's a breakdown of the object:\n\n**Events**\n\nThe object cont",
+  "latency_ms": 19089
+ },
+ {
+  "incident": "INC-005",
+  "used_context": false,
+  "calls": [
+   {
+    "name": "search_events",
+    "params": {
+     "start": "2026-11-12T00:00:00Z",
+     "end": "2026-11-12T12:00:00Z"
+    },
+    "result_count": 38
+   }
+  ],
+  "answer": "This is a JSON object representing a collection of security events detected by a Suricata sensor. Here's a breakdown of the object:\n\n**Events**\n\nThe object cont",
+  "latency_ms": 19064
+ }
+]

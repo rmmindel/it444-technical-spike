@@ -55,4 +55,4 @@ summary["PASS"] = (n_fab_answers == 0 and summary["empty_cases_correct"] == "5/5
     and sum(r['tool_ok'] for r in rows) >= 18 and sum(r['latency_ms'] <= 30000 for r in rows) >= 19)
 print(json.dumps(summary, indent=1))
 os.makedirs("results", exist_ok=True)
-json.dump(dict(summary=summary, rows=rows), open(f"results/{model.replace(':','_')}.json", "w"), indent=1)
+json.dump(dict(summary=summary, rows=rows), open(f"results/{'v2_' if os.environ.get('PROMPT_V2') else ''}{model.replace(':','_')}.json", "w"), indent=1)

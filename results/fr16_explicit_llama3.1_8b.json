@@ -1,0 +1,77 @@
+[
+ {
+  "incident": "INC-001",
+  "used_context": true,
+  "calls": [
+   {
+    "name": "get_ip_history",
+    "params": {
+     "ip": "192.168.50.23"
+    },
+    "result_count": 2
+   }
+  ],
+  "answer": "This incident (INC-001) is considered High severity. The source IP 192.168.50.23 has been seen in the network for a short period of time, and there are 12 alert",
+  "latency_ms": 5626
+ },
+ {
+  "incident": "INC-002",
+  "used_context": true,
+  "calls": [
+   {
+    "name": "get_ip_history",
+    "params": {
+     "ip": "192.168.50.31"
+    },
+    "result_count": 1
+   }
+  ],
+  "answer": "This incident is considered dangerous. The source IP 192.168.50.31 has been associated with 8 high-severity alerts over a short period of time.",
+  "latency_ms": 2682
+ },
+ {
+  "incident": "INC-003",
+  "used_context": true,
+  "calls": [
+   {
+    "name": "get_ip_history",
+    "params": {
+     "ip": "192.168.50.44"
+    },
+    "result_count": 1
+   }
+  ],
+  "answer": "This incident is considered Medium severity. The source IP 192.168.50.44 has been seen in the network for 4 minutes, with 6 alerts.",
+  "latency_ms": 3196
+ },
+ {
+  "incident": "INC-004",
+  "used_context": true,
+  "calls": [
+   {
+    "name": "get_ip_history",
+    "params": {
+     "ip": "192.168.50.23"
+    },
+    "result_count": 2
+   }
+  ],
+  "answer": "This incident (INC-004) is not considered dangerous. The severity label is \"Low\" and there are only 5 alerts associated with it.",
+  "latency_ms": 3090
+ },
+ {
+  "incident": "INC-005",
+  "used_context": true,
+  "calls": [
+   {
+    "name": "get_ip_history",
+    "params": {
+     "ip": "192.168.50.57"
+    },
+    "result_count": 1
+   }
+  ],
+  "answer": "This incident is considered Medium severity. The source IP 192.168.50.57 has been seen in the network for 3 alerts within a 3-minute time frame.",
+  "latency_ms": 2768
+ }
+]
