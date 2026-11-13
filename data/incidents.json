@@ -1,0 +1,96 @@
+[
+ {
+  "incident_id": "INC-001",
+  "src_ip": "192.168.50.23",
+  "first_seen": "2026-11-12T09:14:00Z",
+  "last_seen": "2026-11-12T09:16:00Z",
+  "alert_ids": [
+   "4f23835c-0363-88bd-49ae-39704f13b86d",
+   "be1da273-4d44-dee2-dc89-f2cd46b57a60",
+   "8ba9c1ed-7124-0317-e6be-81f2a2450762",
+   "9465dc65-6998-6627-1300-29c97ec5c561",
+   "b6eaa27f-f2b7-db45-7e51-3bfa9ffad8b0",
+   "b13e486f-1e98-0934-074a-dd881ff2bfe3",
+   "f1aaa184-cdad-9729-5edf-766704c61bb9",
+   "558ed883-590e-c554-2790-febe83e867c6",
+   "581339b0-1461-ddca-cb2c-7e84350d101e",
+   "e58cccbc-603c-9ad1-55f8-fcf4a116a8dd",
+   "ae4a1a39-aab9-0bac-8a75-1531a2016f24",
+   "8ce3767a-bb4e-a15b-6a8b-9b5de305500b"
+  ],
+  "alert_count": 12,
+  "status": "open",
+  "severity_label": "High",
+  "signature": "ET SCAN Nmap SYN Scan"
+ },
+ {
+  "incident_id": "INC-002",
+  "src_ip": "192.168.50.31",
+  "first_seen": "2026-11-12T10:02:00Z",
+  "last_seen": "2026-11-12T10:09:00Z",
+  "alert_ids": [
+   "b999c603-3cb3-b086-9d96-6dd567e1a002",
+   "a1e98113-6581-6c29-a2d4-3efae650d42b",
+   "436f32f4-fd5b-8c3e-0f37-aeeb59d04caa",
+   "25a813aa-405c-1820-7238-40ed86dbb008",
+   "3d0b3a66-a99a-df81-da4d-07803d2af209",
+   "399a7ee8-1044-8d39-cd70-1911bbcf51ba",
+   "4be493a4-cc1a-3e3d-e81c-164313e51d66",
+   "fb76889f-b661-d478-d173-ee7881c89b2a"
+  ],
+  "alert_count": 8,
+  "status": "open",
+  "severity_label": "High",
+  "signature": "ET SCAN SSH Brute Force Attempt"
+ },
+ {
+  "incident_id": "INC-003",
+  "src_ip": "192.168.50.44",
+  "first_seen": "2026-11-12T11:30:00Z",
+  "last_seen": "2026-11-12T11:34:00Z",
+  "alert_ids": [
+   "3959651c-171e-d380-a062-4f23fd055579",
+   "134567a2-6531-030d-c1ee-590e90061c22",
+   "6735adf1-5c0e-0405-058b-35beeac6625e",
+   "9d8bd6b1-6dca-2a95-4433-ea0d95e3510b",
+   "0f6e7a8d-1d92-2329-95be-5db39493c4fc",
+   "2be427c8-4b92-5cbe-fe86-3aea00020728"
+  ],
+  "alert_count": 6,
+  "status": "open",
+  "severity_label": "Medium",
+  "signature": "ET DNS Query to Suspicious TLD"
+ },
+ {
+  "incident_id": "INC-004",
+  "src_ip": "192.168.50.23",
+  "first_seen": "2026-11-12T08:05:00Z",
+  "last_seen": "2026-11-12T08:07:00Z",
+  "alert_ids": [
+   "b53e5b61-20a1-37bd-5d90-d370d27bfb3f",
+   "d282c2e6-aa9f-5fbf-d2de-39fc381f4e7d",
+   "dca2ed0a-6a19-2667-624c-def03bfab9b6",
+   "a4be6e83-3acd-d37c-3eb8-59eff4b6a84a",
+   "73ee226d-f0c4-d80b-a6c9-f4f8504481e7"
+  ],
+  "alert_count": 5,
+  "status": "open",
+  "severity_label": "Low",
+  "signature": "ET SCAN ICMP Ping Sweep"
+ },
+ {
+  "incident_id": "INC-005",
+  "src_ip": "192.168.50.57",
+  "first_seen": "2026-11-12T11:41:00Z",
+  "last_seen": "2026-11-12T11:44:00Z",
+  "alert_ids": [
+   "c6d24a4d-9a43-6ea3-967a-1c8c340510e0",
+   "56f1010a-4beb-1129-9945-957d6361fb48",
+   "ee8d14c5-03d3-2d0d-35ee-be07417b556b"
+  ],
+  "alert_count": 3,
+  "status": "open",
+  "severity_label": "Medium",
+  "signature": "ET WEB_SERVER SQL Injection Attempt"
+ }
+]

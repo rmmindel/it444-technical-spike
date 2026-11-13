@@ -1,0 +1,22 @@
+[
+ {"id":1,"q":"What did 192.168.50.23 do between 09:00 and 10:00 today?","tools":["search_events"],"args":{"ip":"192.168.50.23"},"empty":false},
+ {"id":2,"q":"Show me all events involving 192.168.50.31 today.","tools":["search_events"],"args":{"ip":"192.168.50.31"},"empty":false},
+ {"id":3,"q":"How many alerts came from 192.168.50.31?","tools":["search_events","get_ip_history"],"args":{"ip":"192.168.50.31"},"empty":false},
+ {"id":4,"q":"Which incidents involve 192.168.50.23?","tools":["get_ip_history"],"args":{"ip":"192.168.50.23"},"empty":false},
+ {"id":5,"q":"Give me the details of incident INC-002.","tools":["get_incident_details"],"args":{"incident_id":"INC-002"},"empty":false},
+ {"id":6,"q":"What ports were targeted in incident INC-001?","tools":["get_incident_details","search_events"],"args":{},"empty":false},
+ {"id":7,"q":"Is 192.168.50.44 involved in any incidents?","tools":["get_ip_history"],"args":{"ip":"192.168.50.44"},"empty":false},
+ {"id":8,"q":"What did 192.168.50.57 do this morning?","tools":["search_events"],"args":{"ip":"192.168.50.57"},"empty":false},
+ {"id":9,"q":"Were there any events on port 22 today?","tools":["search_events"],"args":{"port":22},"empty":false},
+ {"id":10,"q":"Were there any events on port 80 today?","tools":["search_events"],"args":{"port":80},"empty":false},
+ {"id":11,"q":"What is the severity of the incident involving 192.168.50.44?","tools":["get_ip_history","search_events"],"args":{"ip":"192.168.50.44"},"empty":false},
+ {"id":12,"q":"When did the activity from 192.168.50.31 start and end?","tools":["get_ip_history","search_events"],"args":{"ip":"192.168.50.31"},"empty":false},
+ {"id":13,"q":"Show the Zeek events from 192.168.50.23 today.","tools":["search_events"],"args":{"ip":"192.168.50.23","sensor":"zeek"},"empty":false},
+ {"id":14,"q":"Summarize incident INC-005 for me.","tools":["get_incident_details"],"args":{"incident_id":"INC-005"},"empty":false},
+ {"id":15,"q":"Is 192.168.50.23 dangerous?","tools":["get_ip_history","search_events"],"args":{"ip":"192.168.50.23"},"empty":false},
+ {"id":16,"q":"What did 192.168.50.99 do today?","tools":["search_events"],"args":{"ip":"192.168.50.99"},"empty":true},
+ {"id":17,"q":"Give me the details of incident INC-009.","tools":["get_incident_details"],"args":{"incident_id":"INC-009"},"empty":true},
+ {"id":18,"q":"Were there any events on port 3389 today?","tools":["search_events"],"args":{"port":3389},"empty":true},
+ {"id":19,"q":"Which incidents involve 10.0.0.5?","tools":["get_ip_history"],"args":{"ip":"10.0.0.5"},"empty":true},
+ {"id":20,"q":"What did 192.168.50.23 do yesterday between 02:00 and 03:00?","tools":["search_events"],"args":{"ip":"192.168.50.23"},"empty":true}
+]
