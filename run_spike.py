@@ -54,5 +54,5 @@ summary = dict(model=model, run_at=datetime.datetime.now().isoformat(timespec="s
 summary["PASS"] = (n_fab_answers == 0 and summary["empty_cases_correct"] == "5/5"
     and sum(r['tool_ok'] for r in rows) >= 18 and sum(r['latency_ms'] <= 30000 for r in rows) >= 19)
 print(json.dumps(summary, indent=1))
-os.makedirs("results", exist_ok=True)
-json.dump(dict(summary=summary, rows=rows), open(f"results/{'v2_' if os.environ.get('PROMPT_V2') else ''}{model.replace(':','_')}.json", "w"), indent=1)
+OUT = os.environ.get("RESULTS_DIR", "results"); os.makedirs(OUT, exist_ok=True)
+json.dump(dict(summary=summary, rows=rows), open(f"{OUT}/{'v2_' if os.environ.get('PROMPT_V2') else ''}{model.replace(':','_')}.json", "w"), indent=1)

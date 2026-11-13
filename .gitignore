@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 ollama_server.log
 results/server.log
+results_live/
